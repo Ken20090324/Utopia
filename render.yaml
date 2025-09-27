@@ -1,7 +1,7 @@
 services:
   - type: web
     name: math
-    env: docker
+    env: python
     plan: free
 buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn --port $PORT --host 0.0.0.0 main:app"
